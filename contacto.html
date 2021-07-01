@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="manifest" href="manifest/manifest.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Sergio Diaz, Cátedra PWA </title>
+  </head>
+
+  <body>
+
+    <header>
+	
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+  <a class="navbar-brand" href="index.html">Music Social</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<div class="offline-banner">
+        <div>Status:
+            <span class="st-offline">Conexion desactivada!</span>
+            <span class="st-online">Conexion activada!</span>
+        </div>
+    </div>
+	
+    </header>
+
+   <main role="main" class="container-fluid">
+      <h2>Envíanos tu mensaje</h2>
+      <p>Envianos tu duda o consulta sobre nuestra aplicacion o contenido</p>
+    
+	<div>
+	<form action="funciones/mensaje-enviado-exito.php" method="post">
+        <div class="row">
+		<div class="col">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Inserte su nombre…">
+		</div>
+        <div class="col">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Inserte su apellido…">
+        </div>
+		</div>
+		<div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+		<div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+			<textarea id="mensaje" name="mensaje" class="form-control" cols="30" rows="5"></textarea>
+        </div>
+		<div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg btn-block mb-2">Enviar</button>
+		<button type="reset" class="btn btn-primary btn-lg btn-block mb-2">Limpiar</button>
+</div>
+</form>
+	</div>
+	
+	</main>
+
+    <footer id="piepagina">
+     
+    <p id="credito">Diseño web, Aplicaciones Web Progresivas, Tercer cuatrimestre,2021, Noche, A, Diaz Sergio, Rubino Santiago, 2do parcial.</p>
+      
+    </footer>
+
+    <!-- Show a spinner or placeholders for content -->
+	<script src="js/soccer-api.js"></script> 
+    <script src="js/main.js"></script>
+   <!-- Librerias juego -->
+    <script src='js/game/createjs_1.1_min.js'></script>
+    <script src='js/game/zim_7.0.1.js'></script>
+    <script src='js/game/icon.js'></script>
+    <script src='js/game/Box2dWeb-2.1.a.3.min.js'></script>
+    <script src='js/game/physics_1.0.js'></script>
+    <script src='js/game/game_1.0.4.js'></script>
+    <!-- Script inicializo juego -->
+    <script  src="js/game.js"></script>
+	<script src="js/picturefill.js"></script>
+	<script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+	</body>
+</html>
